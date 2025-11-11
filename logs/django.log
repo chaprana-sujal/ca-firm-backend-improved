@@ -60,3 +60,98 @@ WARNING 2025-11-11 09:03:39,172 inspector 1 135003522438912 Inspect method conf 
 WARNING 2025-11-11 09:03:39,173 inspector 1 135003539224320 Inspect method reserved failed
 WARNING 2025-11-11 09:03:39,175 inspector 1 135003564402432 Inspect method registered failed
 WARNING 2025-11-11 09:03:39,176 inspector 1 135003556009728 Inspect method scheduled failed
+INFO 2025-11-11 09:24:45,170 command 1 135003747047232 15 detected, shutting down
+INFO 2025-11-11 09:25:37,640 command 1 139966171080512 Visit me at http://0.0.0.0:5555/flower/
+INFO 2025-11-11 09:25:37,651 command 1 139966171080512 Broker: redis://:**@redis:6379/2
+INFO 2025-11-11 09:25:37,657 command 1 139966171080512 Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'core.celery.debug_task',
+ 'core.celery.test_retry_task',
+ 'services.tasks.cleanup_incomplete_cases',
+ 'services.tasks.generate_case_report_async',
+ 'services.tasks.generate_daily_reports',
+ 'services.tasks.send_case_notification_async',
+ 'services.tasks.send_case_reminders',
+ 'services.tasks.verify_document_async']
+INFO 2025-11-11 09:25:37,670 mixins 1 139966083237632 Connected to redis://:**@redis:6379/2
+WARNING 2025-11-11 09:25:38,733 inspector 1 139965962888960 Inspect method reserved failed
+WARNING 2025-11-11 09:25:38,739 inspector 1 139966004852480 Inspect method stats failed
+WARNING 2025-11-11 09:25:38,740 inspector 1 139965996459776 Inspect method active_queues failed
+WARNING 2025-11-11 09:25:38,740 inspector 1 139965954496256 Inspect method revoked failed
+WARNING 2025-11-11 09:25:38,744 inspector 1 139965467981568 Inspect method conf failed
+WARNING 2025-11-11 09:25:38,746 inspector 1 139965979674368 Inspect method scheduled failed
+WARNING 2025-11-11 09:25:38,747 inspector 1 139965971281664 Inspect method active failed
+WARNING 2025-11-11 09:25:38,747 inspector 1 139965988067072 Inspect method registered failed
+INFO 2025-11-11 09:29:10,387 command 1 128291766880064 Visit me at http://0.0.0.0:5555/flower/
+INFO 2025-11-11 09:29:10,393 command 1 128291766880064 Broker: redis://:**@redis:6379/2
+INFO 2025-11-11 09:29:10,398 command 1 128291766880064 Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'core.celery.debug_task',
+ 'core.celery.test_retry_task',
+ 'services.tasks.cleanup_incomplete_cases',
+ 'services.tasks.generate_case_report_async',
+ 'services.tasks.generate_daily_reports',
+ 'services.tasks.send_case_notification_async',
+ 'services.tasks.send_case_reminders',
+ 'services.tasks.verify_document_async']
+INFO 2025-11-11 09:29:10,409 mixins 1 128291679037184 Connected to redis://:**@redis:6379/2
+WARNING 2025-11-11 09:29:11,460 inspector 1 128291142891264 Inspect method revoked failed
+WARNING 2025-11-11 09:29:11,460 inspector 1 128291670644480 Inspect method stats failed
+WARNING 2025-11-11 09:29:11,461 inspector 1 128291645466368 Inspect method scheduled failed
+WARNING 2025-11-11 09:29:11,466 inspector 1 128291134498560 Inspect method conf failed
+WARNING 2025-11-11 09:29:11,467 inspector 1 128291662251776 Inspect method active_queues failed
+WARNING 2025-11-11 09:29:11,469 inspector 1 128291637073664 Inspect method active failed
+WARNING 2025-11-11 09:29:11,472 inspector 1 128291653859072 Inspect method registered failed
+WARNING 2025-11-11 09:29:11,473 inspector 1 128291628680960 Inspect method reserved failed
+INFO 2025-11-11 09:45:12,309 command 1 128291766880064 15 detected, shutting down
+INFO 2025-11-11 09:45:17,168 command 1 123726133610304 Visit me at http://0.0.0.0:5555/flower/
+INFO 2025-11-11 09:45:17,182 command 1 123726133610304 Broker: redis://:**@redis:6379/2
+INFO 2025-11-11 09:45:17,193 command 1 123726133610304 Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'core.celery.debug_task',
+ 'core.celery.test_retry_task',
+ 'services.tasks.cleanup_incomplete_cases',
+ 'services.tasks.generate_case_report_async',
+ 'services.tasks.generate_daily_reports',
+ 'services.tasks.send_case_notification_async',
+ 'services.tasks.send_case_reminders',
+ 'services.tasks.verify_document_async',
+ 'users.tasks.cleanup_inactive_users',
+ 'users.tasks.generate_user_activity_report',
+ 'users.tasks.notify_user_profile_update',
+ 'users.tasks.send_email_verification',
+ 'users.tasks.send_password_reset_email',
+ 'users.tasks.sync_user_data_to_external_system']
+INFO 2025-11-11 09:45:17,210 mixins 1 123726045767424 Connected to redis://:**@redis:6379/2
+WARNING 2025-11-11 09:45:18,279 inspector 1 123726012196608 Inspect method scheduled failed
+WARNING 2025-11-11 09:45:18,280 inspector 1 123726020589312 Inspect method registered failed
+WARNING 2025-11-11 09:45:18,280 inspector 1 123726003803904 Inspect method active failed
+WARNING 2025-11-11 09:45:18,283 inspector 1 123726037374720 Inspect method stats failed
+WARNING 2025-11-11 09:45:18,284 inspector 1 123725642979072 Inspect method conf failed
+WARNING 2025-11-11 09:45:18,285 inspector 1 123725659764480 Inspect method reserved failed
+WARNING 2025-11-11 09:45:18,288 inspector 1 123725651371776 Inspect method revoked failed
+WARNING 2025-11-11 09:45:18,289 inspector 1 123726028982016 Inspect method active_queues failed

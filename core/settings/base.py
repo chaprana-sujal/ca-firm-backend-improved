@@ -121,15 +121,8 @@ CACHES = {
         'BACKEND': 'django.core.cache.backends.redis.RedisCache',
         'LOCATION': f'{REDIS_URL}/0',
         'OPTIONS': {
-            'parser_class': 'redis.connection.PythonParser',
-            'pool_class': 'redis.BlockingConnectionPool',
-            'pool_class_kwargs': {
-                'max_connections': 50,
-                'timeout': 20,
-            },
             'socket_connect_timeout': 5,
             'socket_timeout': 5,
-            'retry_on_timeout': True,
         },
         'KEY_PREFIX': 'cafirm',
         'TIMEOUT': 300,
@@ -138,10 +131,9 @@ CACHES = {
         'BACKEND': 'django.core.cache.backends.redis.RedisCache',
         'LOCATION': f'{REDIS_URL}/1',
         'KEY_PREFIX': 'session',
-        'TIMEOUT': 86400,  # 24 hours
+        'TIMEOUT': 86400,
     }
 }
-
 # Session configuration
 SESSION_ENGINE = 'django.contrib.sessions.backends.cached_db'
 SESSION_CACHE_ALIAS = 'sessions'
