@@ -11,7 +11,10 @@ class CustomUserManager(BaseUserManager):
         """
         if not email:
             raise ValueError('The Email must be set')
+        # Normalize and store email as lowercase to enforce case-insensitive uniqueness
         email = self.normalize_email(email)
+        if email:
+            email = email.lower()
         user = self.model(email=email, **extra_fields)
         user.set_password(password)
         user.save(using=self._db)

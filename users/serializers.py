@@ -26,6 +26,16 @@ class RegistrationSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError({"password": "Password fields didn't match."})
         return data
 
+    def validate_email(self, value):
+        """
+        Ensure email is unique (case-insensitive) and normalize to lowercase.
+        Prevent creating multiple accounts with the same email but different casing.
+        """
+        email_lower = value.lower()
+        if CustomUser.objects.filter(email__iexact=email_lower).exists():
+            raise serializers.ValidationError("A user with this email already exists.")
+        return email_lower
+
     def create(self, validated_data):
         """
         Creates and returns a new user instance, given the validated data.
@@ -52,3 +62,9 @@ class CustomUserSerializer(serializers.ModelSerializer):
         # Exclude sensitive fields like password
         fields = ('id', 'email', 'first_name', 'last_name', 'is_ca_firm', 'is_active', 'date_joined')
         read_only_fields = ('email', 'is_ca_firm', 'is_active', 'date_joined')
+
+class GoogleLoginSerializer(serializers.Serializer):
+    """
+    Serializer to validate Google OAuth token.
+    """
+    token = serializers.CharField(required=True)

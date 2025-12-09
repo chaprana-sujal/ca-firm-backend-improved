@@ -4,6 +4,7 @@ Modernized user authentication views with security enhancements
 """
 
 from rest_framework import generics, status
+from rest_framework.views import APIView
 from rest_framework.decorators import api_view, throttle_classes
 from rest_framework.response import Response
 from rest_framework.permissions import AllowAny, IsAuthenticated
@@ -13,8 +14,14 @@ from django.contrib.auth import get_user_model
 from django.core.cache import cache
 from django.utils import timezone
 import logging
+from django.db import IntegrityError
 
-from .serializers import RegistrationSerializer, CustomUserSerializer
+from .serializers import RegistrationSerializer, CustomUserSerializer, GoogleLoginSerializer
+from google.oauth2 import id_token
+from google.auth.transport import requests as google_requests
+from django.conf import settings
+import secrets
+import string
 
 CustomUser = get_user_model()
 logger = logging.getLogger(__name__)
@@ -41,7 +48,14 @@ class RegisterView(generics.CreateAPIView):
         
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        user = self.perform_create(serializer)
+        try:
+            user = self.perform_create(serializer)
+        except IntegrityError as e:
+            # Likely a duplicate email raced to DB-level uniqueness
+            logger.exception('IntegrityError during registration')
+            return Response({
+                'detail': 'A user with this email already exists.'
+            }, status=status.HTTP_400_BAD_REQUEST)
         
         # Generate JWT tokens for immediate login
         refresh = RefreshToken.for_user(user)
@@ -84,11 +98,6 @@ class RetrieveUpdateUserView(generics.RetrieveUpdateAPIView):
     """
     API View to retrieve or update the authenticated user's profile.
     URL: /api/user/profile/
-    
-    Improvements:
-    - Caching for better performance
-    - Activity logging
-    - Proper validation
     """
     serializer_class = CustomUserSerializer
     permission_classes = (IsAuthenticated,)
@@ -259,3 +268,79 @@ def user_statistics(request):
     }
     
     return Response(stats, status=status.HTTP_200_OK)
+
+
+class GoogleLoginView(APIView):
+    """
+    API View to handle Google Login.
+    Verifies the ID token and creates/logs in the user.
+    """
+    permission_classes = (AllowAny,)
+    serializer_class = GoogleLoginSerializer
+    throttle_classes = [AuthRateThrottle]
+
+    def post(self, request):
+        serializer = self.serializer_class(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        token = serializer.validated_data['token']
+
+        try:
+            # Verify the token with Google
+            # We use the requests transport to verify the token
+            request_adapter = google_requests.Request()
+            
+            # Specify the CLIENT_ID of the app that accesses the backend:
+            # This should be in your environment variables
+            client_id = settings.GOOGLE_CLIENT_ID
+            
+            id_info = id_token.verify_oauth2_token(
+                token, request_adapter, client_id
+            )
+
+            # ID token is valid. Get the user's Google Account ID from the decoded token.
+            email = id_info.get('email')
+            
+            if not email:
+                return Response({'error': 'Email not found in token'}, status=status.HTTP_400_BAD_REQUEST)
+            
+            # Check if user exists
+            try:
+                user = CustomUser.objects.get(email=email)
+                # If user exists, just log them in
+                logger.info(f"User logged in via Google: {email}")
+            except CustomUser.DoesNotExist:
+                # Create a new user
+                first_name = id_info.get('given_name', '')
+                last_name = id_info.get('family_name', '')
+                
+                # Generate a random password
+                alphabet = string.ascii_letters + string.digits
+                password = ''.join(secrets.choice(alphabet) for i in range(20))
+                
+                user = CustomUser.objects.create_user(
+                    email=email,
+                    password=password,
+                    first_name=first_name,
+                    last_name=last_name,
+                    is_ca_firm=False # Default to client
+                )
+                logger.info(f"New user created via Google Login: {email}")
+
+            # Generate JWT tokens
+            refresh = RefreshToken.for_user(user)
+            
+            return Response({
+                'user': CustomUserSerializer(user).data,
+                'tokens': {
+                    'refresh': str(refresh),
+                    'access': str(refresh.access_token),
+                },
+                'message': 'Login successful'
+            }, status=status.HTTP_200_OK)
+
+        except ValueError as e:
+            logger.error(f"Google Token Verification Failed: {e}")
+            return Response({'error': 'Invalid token'}, status=status.HTTP_400_BAD_REQUEST)
+        except Exception as e:
+            logger.exception("Google Login Error")
+            return Response({'error': 'An error occurred during login'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

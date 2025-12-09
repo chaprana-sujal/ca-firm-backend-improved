@@ -1,6 +1,7 @@
 from django.db import models
 from django.conf import settings
 from django.utils import timezone # Added for use in Payment model logic
+from django.core.validators import FileExtensionValidator
 
 # --- PHASE 2 MODELS ---
 
@@ -10,6 +11,7 @@ class ServiceCategory(models.Model):
     """
     name = models.CharField(max_length=255, unique=True)
     description = models.TextField(blank=True, null=True)
+    icon = models.CharField(max_length=10, default="📂", help_text="Emoji icon")
     
     class Meta:
         verbose_name_plural = "Service Categories"
@@ -30,6 +32,11 @@ class Service(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
     is_active = models.BooleanField(default=True)
+    features = models.TextField(help_text="Line-separated list of features", blank=True, default="")
+    requirements = models.TextField(help_text="Line-separated list of required documents", blank=True, default="")
+    deliverables = models.TextField(help_text="Line-separated list of deliverables", blank=True, default="")
+    timeline = models.CharField(max_length=100, blank=True, default="3-5 working days")
+    icon = models.CharField(max_length=10, default="📋", help_text="Emoji icon")
 
     def __str__(self):
         return f"{self.category.name} - {self.name}"
@@ -69,7 +76,8 @@ class Document(models.Model):
         on_delete=models.CASCADE
     )
     file = models.FileField(
-        upload_to='case_documents/%Y/%m/%d/' # Files saved to /app/media/case_documents/...
+        upload_to='case_documents/%Y/%m/%d/', # Files saved to /app/media/case_documents/...
+        validators=[FileExtensionValidator(allowed_extensions=['pdf', 'jpg', 'jpeg'])]
     )
     document_type = models.CharField(max_length=255) # e.g., "Aadhaar Card", "MOA Draft"
     uploaded_by = models.ForeignKey(

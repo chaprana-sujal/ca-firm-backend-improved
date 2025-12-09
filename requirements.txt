@@ -87,6 +87,10 @@ sentry-sdk~=2.14.0
 python-slugify~=8.0.1  # URL-safe strings
 pytz~=2024.1  # Timezone handling
 requests~=2.31.0  # HTTP client
+razorpay
+django-anymail~=8.0.0  # SendGrid Web API integration for Django (AnyMail)
+google-auth~=2.29.0
+requests~=2.31.0
 
 # ============================================================================
 # DEVELOPMENT TOOLS (OPTIONAL - Comment out in production)

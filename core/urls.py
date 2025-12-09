@@ -21,6 +21,7 @@ from django.urls import path, include
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.reverse import reverse
+from core import views as core_views
 
 # Defines the entry point (API_ROOT)
 @api_view(['GET'])
@@ -45,6 +46,10 @@ urlpatterns = [
     
     # API Root: GET /api/
     path('api/', api_root, name='api_root'),
+    # Health and readiness endpoints
+    path('api/health/', core_views.health_check, name='api_health'),
+    path('api/ready/', core_views.readiness_check, name='api_ready'),
+    path('api/alive/', core_views.liveness_check, name='api_alive'),
     
     # Include all paths from the users app under the /api/ namespace
     path('api/', include('users.urls')), 

@@ -174,6 +174,9 @@ CELERY_BROKER_CONNECTION_MAX_RETRIES = 10
 
 AUTH_USER_MODEL = 'users.CustomUser'
 
+# Google OAuth
+GOOGLE_CLIENT_ID = os.environ.get('GOOGLE_CLIENT_ID')
+
 # Password validation
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -317,6 +320,42 @@ EMAIL_BACKEND = os.environ.get(
 )
 DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL', 'no-reply@cafirm.com')
 SERVER_EMAIL = os.environ.get('SERVER_EMAIL', 'server@cafirm.com')
+
+# Prefer using Anymail (SendGrid Web API) when an API key is available.
+# Fall back to SMTP relay only if Anymail isn't enabled.
+# Read the API key from either SENDGRID_API_KEY or EMAIL_HOST_PASSWORD (backwards compatible).
+SENDGRID_API_KEY = os.environ.get('SENDGRID_API_KEY') or os.environ.get('EMAIL_HOST_PASSWORD')
+USE_ANYMAIL = os.environ.get('USE_ANYMAIL', 'True').lower() == 'true'
+
+if SENDGRID_API_KEY and USE_ANYMAIL:
+    # Ensure anymail is present at runtime (added to requirements). This makes Django use
+    # the SendGrid HTTP API which is more reliable than plain SMTP for most deployments.
+    if 'anymail' not in INSTALLED_APPS:
+        INSTALLED_APPS.append('anymail')
+
+    EMAIL_BACKEND = 'anymail.backends.sendgrid.EmailBackend'
+    ANYMAIL = {
+        'SENDGRID_API_KEY': SENDGRID_API_KEY,
+    }
+    # Keep DEFAULT_FROM_EMAIL overridable
+    DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL', DEFAULT_FROM_EMAIL)
+
+elif SENDGRID_API_KEY:
+    # If Anymail is disabled, fall back to SMTP relay using the API key as password
+    EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+    EMAIL_HOST = os.environ.get('EMAIL_HOST', 'smtp.sendgrid.net')
+    EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER', 'apikey')
+    EMAIL_HOST_PASSWORD = SENDGRID_API_KEY
+    EMAIL_PORT = int(os.environ.get('EMAIL_PORT', 587))
+    EMAIL_USE_TLS = os.environ.get('EMAIL_USE_TLS', 'True').lower() == 'true'
+    DEFAULT_FROM_EMAIL = os.environ.get('DEFAULT_FROM_EMAIL', DEFAULT_FROM_EMAIL)
+
+# ============================================================================
+# PAYMENT GATEWAY (Razorpay) CONFIG
+# ============================================================================
+# Set these in your environment or .env file
+RAZORPAY_KEY_ID = os.environ.get('RAZORPAY_KEY_ID')
+RAZORPAY_KEY_SECRET = os.environ.get('RAZORPAY_KEY_SECRET')
 
 # ============================================================================
 # LOGGING CONFIGURATION

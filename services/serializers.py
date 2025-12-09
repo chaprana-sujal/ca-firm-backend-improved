@@ -23,13 +23,13 @@ class ServiceSerializer(serializers.ModelSerializer):
     plans = ServicePlanSerializer(many=True, read_only=True)
     class Meta:
         model = Service
-        fields = ('id', 'name', 'description', 'is_active', 'category', 'plans') 
+        fields = ('id', 'name', 'description', 'is_active', 'category', 'plans', 'features', 'requirements', 'deliverables', 'timeline', 'icon') 
 
 class ServiceCategorySerializer(serializers.ModelSerializer):
     services = ServiceSerializer(many=True, read_only=True)
     class Meta:
         model = ServiceCategory
-        fields = ('id', 'name', 'description', 'services')
+        fields = ('id', 'name', 'description', 'services', 'icon')
 
 class PaymentSerializer(serializers.ModelSerializer):
     case_id = serializers.ReadOnlyField(source='case.id')

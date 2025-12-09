@@ -5,7 +5,7 @@ from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
 )
-from .views import RegisterView, RetrieveUpdateUserView
+from .views import RegisterView, RetrieveUpdateUserView, GoogleLoginView
 
 urlpatterns = [
     # AUTH Endpoints
@@ -21,4 +21,7 @@ urlpatterns = [
     # USER Endpoints
     # GET/PUT/PATCH /api/user/profile/ -> Retrieve or update the authenticated user's profile
     path('user/profile/', RetrieveUpdateUserView.as_view(), name='user_profile'),
+
+    # POST /api/auth/google/ -> Google Login
+    path('auth/google/', GoogleLoginView.as_view(), name='auth_google'),
 ]

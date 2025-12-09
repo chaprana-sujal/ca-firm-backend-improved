@@ -12,6 +12,7 @@ from rest_framework.test import APITestCase, APIClient
 from rest_framework import status
 from rest_framework_simplejwt.tokens import RefreshToken
 from decimal import Decimal
+from django.test import override_settings
 
 from .models import ServiceCategory, Service, ServicePlan, Case, Document, Payment
 
@@ -398,6 +399,49 @@ class PaymentAPITests(APITestCase):
         response = self.client.post(url)
         
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
+
+    @override_settings(DEBUG=True)
+    def test_create_razorpay_order_in_test_mode(self):
+        """When DEBUG=True and no keys, creating a Razorpay order returns test payload"""
+        url = reverse('razorpay_create_order', args=[self.case.id])
+        response = self.client.post(url, format='json')
+
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        self.assertIn('test_mode', response.data)
+        self.assertTrue(response.data.get('test_mode'))
+
+        # Check payment record created with transaction_id matching returned order_id
+        order_id = response.data.get('order_id')
+        payment = Payment.objects.get(case=self.case)
+        self.assertEqual(payment.transaction_id, order_id)
+        self.assertFalse(payment.is_successful)
+
+    @override_settings(DEBUG=True)
+    def test_verify_razorpay_payment_in_test_mode(self):
+        """In DEBUG test mode, verification with 'test' flag marks payment successful"""
+        # Create fake order first
+        create_url = reverse('razorpay_create_order', args=[self.case.id])
+        create_resp = self.client.post(create_url, format='json')
+        self.assertEqual(create_resp.status_code, status.HTTP_200_OK)
+        order_id = create_resp.data.get('order_id')
+
+        verify_url = reverse('razorpay_verify_payment', args=[self.case.id])
+        payload = {
+            'razorpay_payment_id': 'TEST_PAY_123',
+            'razorpay_order_id': order_id,
+            'razorpay_signature': 'IGNORED',
+            'test': True
+        }
+
+        resp = self.client.post(verify_url, data=payload, format='json')
+        self.assertEqual(resp.status_code, status.HTTP_200_OK)
+        self.assertTrue(resp.data.get('is_successful'))
+
+        # Verify Payment and Case status
+        payment = Payment.objects.get(case=self.case)
+        self.assertTrue(payment.is_successful)
+        self.case.refresh_from_db()
+        self.assertEqual(self.case.status, Case.CaseStatus.PAID)
 
 
 class DocumentAPITests(APITestCase):

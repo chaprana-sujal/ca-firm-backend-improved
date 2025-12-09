@@ -218,11 +218,57 @@ def process_payment_webhook(self, payload):
         payload: Webhook payload from payment gateway
     """
     try:
-        # Add your webhook processing logic here
-        # For example: Razorpay, Stripe webhook handling
-        
-        logger.info("Payment webhook processed successfully")
-        return "Webhook processed"
+        # Basic Razorpay webhook processing logic
+        try:
+            event = payload.get('event')
+
+            # Handle payment captured
+            if event == 'payment.captured':
+                payment_entity = payload.get('payload', {}).get('payment', {}).get('entity', {})
+                payment_id = payment_entity.get('id')
+                order_id = payment_entity.get('order_id')
+                amount = payment_entity.get('amount')
+
+                from services.models import Payment
+
+                # Try to update existing Payment by matching order id (stored previously)
+                try:
+                    payment = Payment.objects.get(transaction_id=order_id)
+                    payment.transaction_id = payment_id
+                    payment.is_successful = True
+                    payment.paid_at = timezone.now()
+                    payment.save()
+
+                    # Update case
+                    case = payment.case
+                    case.status = case.CaseStatus.PAID
+                    case.save()
+                except Payment.DoesNotExist:
+                    # If no Payment exists, we can create a minimal record if we have case info in notes
+                    notes = payment_entity.get('notes', {})
+                    case_id = notes.get('case_id')
+                    if case_id:
+                        try:
+                            from services.models import Case
+                            case = Case.objects.get(id=int(case_id))
+                            Payment.objects.create(
+                                case=case,
+                                amount=(amount / 100) if amount else case.service_plan.price,
+                                transaction_id=payment_id,
+                                is_successful=True,
+                                paid_at=timezone.now()
+                            )
+                            case.status = case.CaseStatus.PAID
+                            case.save()
+                        except Exception:
+                            logger.exception('Failed creating Payment from webhook')
+
+            logger.info("Payment webhook processed successfully")
+            return "Webhook processed"
+
+        except Exception as exc:
+            logger.error(f"Webhook processing failed in task: {exc}")
+            raise
     
     except Exception as exc:
         logger.error(f"Webhook processing failed: {exc}")
