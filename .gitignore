@@ -12,3 +12,6 @@ media/
 # Local database file
 db.sqlite3
 backup.sql
+logs/
+*.log
+*.rdb
