@@ -5,7 +5,13 @@ from rest_framework_simplejwt.views import (
     TokenObtainPairView,
     TokenRefreshView,
 )
-from .views import RegisterView, RetrieveUpdateUserView, GoogleLoginView
+from .views import (
+    RegisterView, 
+    RetrieveUpdateUserView, 
+    GoogleLoginView, 
+    RequestPasswordResetEmail, 
+    SetNewPasswordView
+)
 
 urlpatterns = [
     # AUTH Endpoints
@@ -24,4 +30,10 @@ urlpatterns = [
 
     # POST /api/auth/google/ -> Google Login
     path('auth/google/', GoogleLoginView.as_view(), name='auth_google'),
+
+    # POST /api/auth/password-reset/request/ -> Request password reset email
+    path('auth/password-reset/request/', RequestPasswordResetEmail.as_view(), name='password-reset-request'),
+
+    # PATCH /api/auth/password-reset/confirm/ -> Confirm password reset with token
+    path('auth/password-reset/confirm/', SetNewPasswordView.as_view(), name='password-reset-confirm'),
 ]

@@ -16,12 +16,24 @@ from django.utils import timezone
 import logging
 from django.db import IntegrityError
 
-from .serializers import RegistrationSerializer, CustomUserSerializer, GoogleLoginSerializer
+from .serializers import (
+    RegistrationSerializer, 
+    CustomUserSerializer, 
+    GoogleLoginSerializer,
+    PasswordResetRequestSerializer,
+    SetNewPasswordSerializer
+)
 from google.oauth2 import id_token
 from google.auth.transport import requests as google_requests
 from django.conf import settings
 import secrets
 import string
+from django.contrib.auth.tokens import PasswordResetTokenGenerator
+from django.utils.encoding import smart_str, force_str, smart_bytes, DjangoUnicodeDecodeError
+from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
+from django.utils.encoding import force_bytes
+from django.urls import reverse
+from django.core.mail import send_mail
 
 CustomUser = get_user_model()
 logger = logging.getLogger(__name__)
@@ -344,3 +356,49 @@ class GoogleLoginView(APIView):
         except Exception as e:
             logger.exception("Google Login Error")
             return Response({'error': 'An error occurred during login'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+class RequestPasswordResetEmail(generics.GenericAPIView):
+    serializer_class = PasswordResetRequestSerializer
+    permission_classes = (AllowAny,)
+    throttle_classes = [AuthRateThrottle]
+
+    def post(self, request):
+        serializer = self.serializer_class(data=request.data)
+        serializer.is_valid(raise_exception=True)
+
+        email = request.data['email']
+        if CustomUser.objects.filter(email=email).exists():
+            user = CustomUser.objects.get(email=email)
+            uidb64 = urlsafe_base64_encode(force_bytes(user.pk))
+            token = PasswordResetTokenGenerator().make_token(user)
+            
+            # Construct the reset link
+            frontend_url = settings.CORS_ALLOWED_ORIGINS[0] if settings.CORS_ALLOWED_ORIGINS else 'http://localhost:3000'
+            absurl = f"{frontend_url}/auth/password-reset-confirm/{uidb64}/{token}/"
+            
+            email_body = f'Hello, \n Use link below to reset your password  \n {absurl}'
+            data = {'email_body': email_body, 'to_email': user.email, 'email_subject': 'Reset your Passsword'}
+            
+            try:
+                send_mail(
+                    data['email_subject'],
+                    data['email_body'],
+                    settings.DEFAULT_FROM_EMAIL,
+                    [data['to_email']],
+                    fail_silently=False,
+                )
+            except Exception as e:
+                 logger.error(f"Failed to send password reset email: {e}")
+                 return Response({'error': 'Failed to send email'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        
+        return Response({'success': 'We have sent you a link to reset your password'}, status=status.HTTP_200_OK)
+
+
+class SetNewPasswordView(generics.GenericAPIView):
+    serializer_class = SetNewPasswordSerializer
+    permission_classes = (AllowAny,)
+    throttle_classes = [AuthRateThrottle]
+
+    def patch(self, request):
+        serializer = self.serializer_class(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        return Response({'success': True, 'message': 'Password reset success'}, status=status.HTTP_200_OK)

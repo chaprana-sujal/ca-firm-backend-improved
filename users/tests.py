@@ -4,15 +4,20 @@ Comprehensive test suite for user authentication and management
 Run with: python manage.py test users
 """
 
-from django.test import TestCase, TransactionTestCase
+from django.test import TestCase
 from django.contrib.auth import get_user_model
 from django.urls import reverse
 from rest_framework.test import APITestCase, APIClient
 from rest_framework import status
 from rest_framework_simplejwt.tokens import RefreshToken
 import json
+from django.utils.encoding import force_bytes
+from django.utils.http import urlsafe_base64_encode
+from django.contrib.auth.tokens import PasswordResetTokenGenerator
+from unittest.mock import patch
 
 User = get_user_model()
+CustomUser = get_user_model()
 
 
 class UserModelTests(TestCase):
@@ -357,6 +362,57 @@ class UserPermissionsTests(APITestCase):
         self.assertTrue(self.ca_user.is_active)
 
 
-# Run tests with: python manage.py test users
-# For coverage report: coverage run --source='users' manage.py test users
-# View coverage: coverage report
+from django.core.cache import cache
+
+class PasswordResetTests(APITestCase):
+    def setUp(self):
+        cache.clear()
+        self.user = CustomUser.objects.create_user(
+            email='testuser@example.com',
+            password='testpassword123',
+            first_name='Test',
+            last_name='User'
+        )
+        self.request_url = reverse('password-reset-request')
+        self.confirm_url = reverse('password-reset-confirm')
+
+    @patch('users.views.send_mail')
+    def test_request_password_reset_email(self, mock_send_mail):
+        data = {'email': 'testuser@example.com'}
+        response = self.client.post(self.request_url, data)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        # Verify email was sent
+        self.assertTrue(mock_send_mail.called)
+        self.assertEqual(mock_send_mail.call_args[0][3], ['testuser@example.com'])
+
+    def test_request_password_reset_invalid_email(self):
+        data = {'email': 'nonexistent@example.com'}
+        response = self.client.post(self.request_url, data)
+        self.assertEqual(response.status_code, status.HTTP_200_OK) 
+        # Should still return 200 to prevent enumeration
+
+    def test_confirm_password_reset_success(self):
+        uidb64 = urlsafe_base64_encode(force_bytes(self.user.pk))
+        token = PasswordResetTokenGenerator().make_token(self.user)
+        
+        data = {
+            'password': 'newpassword123',
+            'token': token,
+            'uidb64': uidb64
+        }
+        response = self.client.patch(self.confirm_url, data)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        
+        self.user.refresh_from_db()
+        self.assertTrue(self.user.check_password('newpassword123'))
+
+    def test_confirm_password_reset_invalid_token(self):
+        uidb64 = urlsafe_base64_encode(force_bytes(self.user.pk))
+        
+        data = {
+            'password': 'newpassword123',
+            'token': 'invalid-token',
+            'uidb64': uidb64
+        }
+        response = self.client.patch(self.confirm_url, data)
+        self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)
