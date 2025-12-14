@@ -32,6 +32,7 @@ class Service(models.Model):
     )
     name = models.CharField(max_length=255)
     description = models.TextField()
+    detail_description = models.TextField(blank=True, null=True, help_text="Long description for the service detail page")
     is_active = models.BooleanField(default=True)
     features = models.TextField(help_text="Line-separated list of features", blank=True, default="")
     requirements = models.TextField(help_text="Line-separated list of required documents", blank=True, default="")

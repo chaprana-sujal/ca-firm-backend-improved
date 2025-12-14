@@ -23,7 +23,7 @@ class ServiceSerializer(serializers.ModelSerializer):
     plans = ServicePlanSerializer(many=True, read_only=True)
     class Meta:
         model = Service
-        fields = ('id', 'name', 'description', 'is_active', 'category', 'plans', 'features', 'requirements', 'deliverables', 'timeline', 'icon') 
+        fields = ('id', 'name', 'description', 'detail_description', 'is_active', 'category', 'plans', 'features', 'requirements', 'deliverables', 'timeline', 'icon') 
 
 class ServiceCategorySerializer(serializers.ModelSerializer):
     services = ServiceSerializer(many=True, read_only=True)

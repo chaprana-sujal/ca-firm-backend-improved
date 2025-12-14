@@ -30,7 +30,7 @@ class ServiceCategoryAdmin(admin.ModelAdmin):
 @admin.register(Service)
 class ServiceAdmin(admin.ModelAdmin):
     # 'price' field is removed from list_display as it is now in the Plan
-    list_display = ('name', 'category', 'is_active') 
+    list_display = ('name', 'category', 'is_active', 'detail_description') 
     list_filter = ('category', 'is_active')
     search_fields = ['name', 'description']
     inlines = [ServicePlanInline] # <-- Includes plans as an inline
