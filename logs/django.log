@@ -4611,3 +4611,1414 @@ WARNING 2025-12-13 19:51:19,521 inspector 1 136821268305664 Inspect method stats
 WARNING 2025-12-13 19:51:19,522 inspector 1 136821234734848 Inspect method active failed
 WARNING 2025-12-13 19:51:19,522 inspector 1 136821243127552 Inspect method scheduled failed
 WARNING 2025-12-13 19:51:19,523 inspector 1 136820738221824 Inspect method conf failed
+INFO 2025-12-14 10:21:39,157 command 1 135208250046272 Visit me at http://0.0.0.0:5555/flower/
+INFO 2025-12-14 10:21:39,178 command 1 135208250046272 Broker: redis://:**@redis:6379/2
+INFO 2025-12-14 10:21:39,194 command 1 135208250046272 Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'core.celery.debug_task',
+ 'core.celery.test_retry_task',
+ 'services.tasks.cleanup_incomplete_cases',
+ 'services.tasks.generate_case_report_async',
+ 'services.tasks.generate_daily_reports',
+ 'services.tasks.send_case_notification_async',
+ 'services.tasks.send_case_reminders',
+ 'services.tasks.verify_document_async',
+ 'users.tasks.cleanup_inactive_users',
+ 'users.tasks.generate_user_activity_report',
+ 'users.tasks.notify_user_profile_update',
+ 'users.tasks.send_email_verification',
+ 'users.tasks.send_password_reset_email',
+ 'users.tasks.sync_user_data_to_external_system']
+INFO 2025-12-14 10:21:39,222 mixins 1 135208159057664 Connected to redis://:**@redis:6379/2
+WARNING 2025-12-14 10:21:40,327 inspector 1 135208132830976 Inspect method registered failed
+WARNING 2025-12-14 10:21:40,327 inspector 1 135208142272256 Inspect method active_queues failed
+WARNING 2025-12-14 10:21:40,334 inspector 1 135207885715200 Inspect method conf failed
+WARNING 2025-12-14 10:21:40,336 inspector 1 135207894107904 Inspect method revoked failed
+WARNING 2025-12-14 10:21:40,339 inspector 1 135207910893312 Inspect method active failed
+WARNING 2025-12-14 10:21:40,342 inspector 1 135207919286016 Inspect method scheduled failed
+WARNING 2025-12-14 10:21:40,344 inspector 1 135207902500608 Inspect method reserved failed
+WARNING 2025-12-14 10:21:40,345 inspector 1 135208150664960 Inspect method stats failed
+INFO 2025-12-14 10:30:00,394 command 1 135208250046272 15 detected, shutting down
+INFO 2025-12-14 10:30:06,598 command 1 130380860454720 Visit me at http://0.0.0.0:5555/flower/
+INFO 2025-12-14 10:30:06,610 command 1 130380860454720 Broker: redis://:**@redis:6379/2
+INFO 2025-12-14 10:30:06,625 command 1 130380860454720 Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'core.celery.debug_task',
+ 'core.celery.test_retry_task',
+ 'services.tasks.cleanup_incomplete_cases',
+ 'services.tasks.generate_case_report_async',
+ 'services.tasks.generate_daily_reports',
+ 'services.tasks.send_case_notification_async',
+ 'services.tasks.send_case_reminders',
+ 'services.tasks.verify_document_async',
+ 'users.tasks.cleanup_inactive_users',
+ 'users.tasks.generate_user_activity_report',
+ 'users.tasks.notify_user_profile_update',
+ 'users.tasks.send_email_verification',
+ 'users.tasks.send_password_reset_email',
+ 'users.tasks.sync_user_data_to_external_system']
+INFO 2025-12-14 10:30:06,654 mixins 1 130380769466112 Connected to redis://:**@redis:6379/2
+WARNING 2025-12-14 10:30:07,739 inspector 1 130380726454016 Inspect method active failed
+WARNING 2025-12-14 10:30:07,744 inspector 1 130380367652608 Inspect method revoked failed
+WARNING 2025-12-14 10:30:07,750 inspector 1 130380743239424 Inspect method registered failed
+WARNING 2025-12-14 10:30:07,757 inspector 1 130380761073408 Inspect method stats failed
+WARNING 2025-12-14 10:30:07,757 inspector 1 130380751632128 Inspect method active_queues failed
+WARNING 2025-12-14 10:30:07,758 inspector 1 130380734846720 Inspect method scheduled failed
+WARNING 2025-12-14 10:30:07,758 inspector 1 130380376045312 Inspect method reserved failed
+WARNING 2025-12-14 10:30:07,759 inspector 1 130380359259904 Inspect method conf failed
+INFO 2025-12-14 10:57:33,961 command 1 130380860454720 15 detected, shutting down
+INFO 2025-12-14 10:57:39,661 command 1 140585817020224 Visit me at http://0.0.0.0:5555/flower/
+INFO 2025-12-14 10:57:39,673 command 1 140585817020224 Broker: redis://:**@redis:6379/2
+INFO 2025-12-14 10:57:39,689 command 1 140585817020224 Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'contact.tasks.send_consultation_email_task',
+ 'core.celery.debug_task',
+ 'core.celery.test_retry_task',
+ 'services.tasks.cleanup_incomplete_cases',
+ 'services.tasks.generate_case_report_async',
+ 'services.tasks.generate_daily_reports',
+ 'services.tasks.send_case_notification_async',
+ 'services.tasks.send_case_reminders',
+ 'services.tasks.verify_document_async',
+ 'users.tasks.cleanup_inactive_users',
+ 'users.tasks.generate_user_activity_report',
+ 'users.tasks.notify_user_profile_update',
+ 'users.tasks.send_email_verification',
+ 'users.tasks.send_password_reset_email',
+ 'users.tasks.sync_user_data_to_external_system']
+INFO 2025-12-14 10:57:39,710 mixins 1 140585726031616 Connected to redis://:**@redis:6379/2
+WARNING 2025-12-14 10:57:40,796 inspector 1 140585461597952 Inspect method revoked failed
+WARNING 2025-12-14 10:57:40,803 inspector 1 140585469990656 Inspect method reserved failed
+WARNING 2025-12-14 10:57:40,804 inspector 1 140585486776064 Inspect method scheduled failed
+WARNING 2025-12-14 10:57:40,812 inspector 1 140585478383360 Inspect method active failed
+WARNING 2025-12-14 10:57:40,822 inspector 1 140585717638912 Inspect method stats failed
+WARNING 2025-12-14 10:57:40,822 inspector 1 140585700853504 Inspect method registered failed
+WARNING 2025-12-14 10:57:40,825 inspector 1 140585709246208 Inspect method active_queues failed
+WARNING 2025-12-14 10:57:40,826 inspector 1 140585453205248 Inspect method conf failed
+INFO 2025-12-14 11:18:12,465 command 1 140585817020224 15 detected, shutting down
+INFO 2025-12-14 11:18:21,113 command 1 123463278847808 Visit me at http://0.0.0.0:5555/flower/
+INFO 2025-12-14 11:18:21,133 command 1 123463278847808 Broker: redis://:**@redis:6379/2
+INFO 2025-12-14 11:18:21,154 command 1 123463278847808 Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'contact.tasks.send_consultation_email_task',
+ 'core.celery.debug_task',
+ 'core.celery.test_retry_task',
+ 'services.tasks.cleanup_incomplete_cases',
+ 'services.tasks.generate_case_report_async',
+ 'services.tasks.generate_daily_reports',
+ 'services.tasks.send_case_notification_async',
+ 'services.tasks.send_case_reminders',
+ 'services.tasks.verify_document_async',
+ 'users.tasks.cleanup_inactive_users',
+ 'users.tasks.generate_user_activity_report',
+ 'users.tasks.notify_user_profile_update',
+ 'users.tasks.send_email_verification',
+ 'users.tasks.send_password_reset_email',
+ 'users.tasks.sync_user_data_to_external_system']
+INFO 2025-12-14 11:18:21,219 mixins 1 123463186810624 Connected to redis://:**@redis:6379/2
+WARNING 2025-12-14 11:18:22,352 inspector 1 123463153239808 Inspect method scheduled failed
+WARNING 2025-12-14 11:18:22,352 inspector 1 123462785951488 Inspect method revoked failed
+WARNING 2025-12-14 11:18:22,365 inspector 1 123463161632512 Inspect method registered failed
+WARNING 2025-12-14 11:18:22,373 inspector 1 123462777558784 Inspect method conf failed
+WARNING 2025-12-14 11:18:22,377 inspector 1 123463178417920 Inspect method stats failed
+WARNING 2025-12-14 11:18:22,382 inspector 1 123463170025216 Inspect method active_queues failed
+WARNING 2025-12-14 11:18:22,382 inspector 1 123463144847104 Inspect method active failed
+WARNING 2025-12-14 11:18:22,383 inspector 1 123462794344192 Inspect method reserved failed
+INFO 2025-12-14 11:27:26,346 command 1 123463278847808 15 detected, shutting down
+INFO 2025-12-14 11:27:32,646 command 1 128607438321472 Visit me at http://0.0.0.0:5555/flower/
+INFO 2025-12-14 11:27:32,661 command 1 128607438321472 Broker: redis://:**@redis:6379/2
+INFO 2025-12-14 11:27:32,678 command 1 128607438321472 Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'contact.tasks.send_consultation_email_task',
+ 'core.celery.debug_task',
+ 'core.celery.test_retry_task',
+ 'services.tasks.cleanup_incomplete_cases',
+ 'services.tasks.generate_case_report_async',
+ 'services.tasks.generate_daily_reports',
+ 'services.tasks.send_case_notification_async',
+ 'services.tasks.send_case_reminders',
+ 'services.tasks.verify_document_async',
+ 'users.tasks.cleanup_inactive_users',
+ 'users.tasks.generate_user_activity_report',
+ 'users.tasks.notify_user_profile_update',
+ 'users.tasks.send_email_verification',
+ 'users.tasks.send_password_reset_email',
+ 'users.tasks.sync_user_data_to_external_system']
+INFO 2025-12-14 11:27:32,701 mixins 1 128607347332864 Connected to redis://:**@redis:6379/2
+WARNING 2025-12-14 11:27:33,810 inspector 1 128607329498880 Inspect method active_queues failed
+WARNING 2025-12-14 11:27:33,814 inspector 1 128606948812544 Inspect method revoked failed
+WARNING 2025-12-14 11:27:33,823 inspector 1 128607304320768 Inspect method active failed
+WARNING 2025-12-14 11:27:33,834 inspector 1 128606940419840 Inspect method conf failed
+WARNING 2025-12-14 11:27:33,835 inspector 1 128606957205248 Inspect method reserved failed
+WARNING 2025-12-14 11:27:33,839 inspector 1 128607321106176 Inspect method registered failed
+WARNING 2025-12-14 11:27:33,841 inspector 1 128607337891584 Inspect method stats failed
+WARNING 2025-12-14 11:27:33,842 inspector 1 128607312713472 Inspect method scheduled failed
+INFO 2025-12-14 11:30:00,897 command 1 128607438321472 15 detected, shutting down
+INFO 2025-12-14 11:30:07,544 command 1 137652699309888 Visit me at http://0.0.0.0:5555/flower/
+INFO 2025-12-14 11:30:07,570 command 1 137652699309888 Broker: redis://:**@redis:6379/2
+INFO 2025-12-14 11:30:07,605 command 1 137652699309888 Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'contact.tasks.send_consultation_email_task',
+ 'core.celery.debug_task',
+ 'core.celery.test_retry_task',
+ 'services.tasks.cleanup_incomplete_cases',
+ 'services.tasks.generate_case_report_async',
+ 'services.tasks.generate_daily_reports',
+ 'services.tasks.send_case_notification_async',
+ 'services.tasks.send_case_reminders',
+ 'services.tasks.verify_document_async',
+ 'users.tasks.cleanup_inactive_users',
+ 'users.tasks.generate_user_activity_report',
+ 'users.tasks.notify_user_profile_update',
+ 'users.tasks.send_email_verification',
+ 'users.tasks.send_password_reset_email',
+ 'users.tasks.sync_user_data_to_external_system']
+INFO 2025-12-14 11:30:07,644 mixins 1 137652607272704 Connected to redis://:**@redis:6379/2
+WARNING 2025-12-14 11:30:08,806 inspector 1 137652217046784 Inspect method reserved failed
+WARNING 2025-12-14 11:30:08,827 inspector 1 137652200261376 Inspect method conf failed
+WARNING 2025-12-14 11:30:08,829 inspector 1 137652573701888 Inspect method scheduled failed
+WARNING 2025-12-14 11:30:08,830 inspector 1 137652582094592 Inspect method registered failed
+WARNING 2025-12-14 11:30:08,840 inspector 1 137652225439488 Inspect method active failed
+WARNING 2025-12-14 11:30:08,843 inspector 1 137652590487296 Inspect method active_queues failed
+WARNING 2025-12-14 11:30:08,845 inspector 1 137652208654080 Inspect method revoked failed
+WARNING 2025-12-14 11:30:08,847 inspector 1 137652598880000 Inspect method stats failed
+INFO 2025-12-14 12:29:03,817 command 1 124121803736896 Visit me at http://0.0.0.0:5555/flower/
+INFO 2025-12-14 12:29:03,831 command 1 124121803736896 Broker: redis://:**@redis:6379/2
+INFO 2025-12-14 12:29:03,841 command 1 124121803736896 Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'contact.tasks.send_consultation_email_task',
+ 'core.celery.debug_task',
+ 'core.celery.test_retry_task',
+ 'services.tasks.cleanup_incomplete_cases',
+ 'services.tasks.generate_case_report_async',
+ 'services.tasks.generate_daily_reports',
+ 'services.tasks.send_case_notification_async',
+ 'services.tasks.send_case_reminders',
+ 'services.tasks.verify_document_async',
+ 'users.tasks.cleanup_inactive_users',
+ 'users.tasks.generate_user_activity_report',
+ 'users.tasks.notify_user_profile_update',
+ 'users.tasks.send_email_verification',
+ 'users.tasks.send_password_reset_email',
+ 'users.tasks.sync_user_data_to_external_system']
+INFO 2025-12-14 12:29:03,857 mixins 1 124121712748288 Connected to redis://:**@redis:6379/2
+WARNING 2025-12-14 12:29:04,923 inspector 1 124121694914304 Inspect method active_queues failed
+WARNING 2025-12-14 12:29:04,923 inspector 1 124121325233920 Inspect method reserved failed
+WARNING 2025-12-14 12:29:04,924 inspector 1 124121703307008 Inspect method stats failed
+WARNING 2025-12-14 12:29:04,930 inspector 1 124121333626624 Inspect method active failed
+WARNING 2025-12-14 12:29:04,931 inspector 1 124121686521600 Inspect method registered failed
+WARNING 2025-12-14 12:29:04,932 inspector 1 124121316841216 Inspect method revoked failed
+WARNING 2025-12-14 12:29:04,933 inspector 1 124121308448512 Inspect method conf failed
+WARNING 2025-12-14 12:29:04,934 inspector 1 124121678128896 Inspect method scheduled failed
+INFO 2025-12-14 12:30:06,639 command 1 124121803736896 15 detected, shutting down
+INFO 2025-12-14 12:30:10,726 command 1 126717284276032 Visit me at http://0.0.0.0:5555/flower/
+INFO 2025-12-14 12:30:10,732 command 1 126717284276032 Broker: redis://:**@redis:6379/2
+INFO 2025-12-14 12:30:10,739 command 1 126717284276032 Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'contact.tasks.send_consultation_email_task',
+ 'core.celery.debug_task',
+ 'core.celery.test_retry_task',
+ 'services.tasks.cleanup_incomplete_cases',
+ 'services.tasks.generate_case_report_async',
+ 'services.tasks.generate_daily_reports',
+ 'services.tasks.send_case_notification_async',
+ 'services.tasks.send_case_reminders',
+ 'services.tasks.verify_document_async',
+ 'users.tasks.cleanup_inactive_users',
+ 'users.tasks.generate_user_activity_report',
+ 'users.tasks.notify_user_profile_update',
+ 'users.tasks.send_email_verification',
+ 'users.tasks.send_password_reset_email',
+ 'users.tasks.sync_user_data_to_external_system']
+INFO 2025-12-14 12:30:10,752 mixins 1 126717193287424 Connected to redis://:**@redis:6379/2
+WARNING 2025-12-14 12:30:11,807 inspector 1 126717104486144 Inspect method active_queues failed
+WARNING 2025-12-14 12:30:11,808 inspector 1 126717054129920 Inspect method conf failed
+WARNING 2025-12-14 12:30:11,808 inspector 1 126717062522624 Inspect method revoked failed
+WARNING 2025-12-14 12:30:11,817 inspector 1 126717184894720 Inspect method stats failed
+WARNING 2025-12-14 12:30:11,819 inspector 1 126717079308032 Inspect method active failed
+WARNING 2025-12-14 12:30:11,819 inspector 1 126717087700736 Inspect method scheduled failed
+WARNING 2025-12-14 12:30:11,820 inspector 1 126717070915328 Inspect method reserved failed
+WARNING 2025-12-14 12:30:11,821 inspector 1 126717096093440 Inspect method registered failed
+INFO 2025-12-14 12:34:34,536 command 1 126717284276032 15 detected, shutting down
+INFO 2025-12-14 12:34:41,935 command 1 133044354664256 Visit me at http://0.0.0.0:5555/flower/
+INFO 2025-12-14 12:34:41,943 command 1 133044354664256 Broker: redis://:**@redis:6379/2
+INFO 2025-12-14 12:34:41,949 command 1 133044354664256 Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'contact.tasks.send_consultation_email_task',
+ 'core.celery.debug_task',
+ 'core.celery.test_retry_task',
+ 'services.tasks.cleanup_incomplete_cases',
+ 'services.tasks.generate_case_report_async',
+ 'services.tasks.generate_daily_reports',
+ 'services.tasks.send_case_notification_async',
+ 'services.tasks.send_case_reminders',
+ 'services.tasks.verify_document_async',
+ 'users.tasks.cleanup_inactive_users',
+ 'users.tasks.generate_user_activity_report',
+ 'users.tasks.notify_user_profile_update',
+ 'users.tasks.send_email_verification',
+ 'users.tasks.send_password_reset_email',
+ 'users.tasks.sync_user_data_to_external_system']
+INFO 2025-12-14 12:34:41,959 mixins 1 133044263675648 Connected to redis://:**@redis:6379/2
+WARNING 2025-12-14 12:34:43,021 inspector 1 133044229056256 Inspect method scheduled failed
+WARNING 2025-12-14 12:34:43,022 inspector 1 133044203878144 Inspect method revoked failed
+WARNING 2025-12-14 12:34:43,023 inspector 1 133044220663552 Inspect method active failed
+WARNING 2025-12-14 12:34:43,024 inspector 1 133044245841664 Inspect method active_queues failed
+WARNING 2025-12-14 12:34:43,031 inspector 1 133043725530880 Inspect method conf failed
+WARNING 2025-12-14 12:34:43,031 inspector 1 133044212270848 Inspect method reserved failed
+WARNING 2025-12-14 12:34:43,032 inspector 1 133044254234368 Inspect method stats failed
+WARNING 2025-12-14 12:34:43,033 inspector 1 133044237448960 Inspect method registered failed
+INFO 2025-12-14 12:47:21,760 command 1 133044354664256 15 detected, shutting down
+ERROR 2025-12-14 12:47:26,621 signal 1 131078401394496 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x77370f859de0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:47:29,545 signal 1 139967315175232 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x7f4cac125de0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:47:32,585 signal 1 126854398003008 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x735f954cdde0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:47:35,678 signal 1 130985053255488 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x7721538a1de0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:47:39,203 signal 1 136299513284416 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x7bf6b20a9de0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:47:43,917 signal 1 126127109625664 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x72b63f881de0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:47:49,883 signal 1 126011095656256 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x729b3c909de0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:47:58,996 signal 1 128547808929600 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x74e9dc755de0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:48:14,406 signal 1 140287712364352 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x7f97453b1de0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:48:46,246 signal 1 131402035021632 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x77826996dde0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:48:49,251 signal 1 132110778439488 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x78276dfc5de0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:48:52,068 signal 1 134431193257792 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x7a43b17c9de0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:48:55,168 signal 1 135851167496000 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x7b8e4e8cdde0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:48:58,720 signal 1 137325974394688 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x7ce5afe35de0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:49:02,942 signal 1 140235079186240 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x7f8b040c9de0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:49:08,882 signal 1 123244655953728 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x70171fe85de0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:49:17,817 signal 1 125957588055872 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x728ec7431de0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:49:33,031 signal 1 132681892529984 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x78ac670a9de0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:50:01,135 signal 1 125804728260416 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x726b301adde0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+ERROR 2025-12-14 12:50:55,037 signal 1 124863110539072 Signal handler <bound method DjangoFixup.on_import_modules of <celery.fixups.django.DjangoFixup object at 0x718ff351dde0>> raised: IndentationError('unexpected indent', ('/app/contact/views.py', 21, 4, '    def perform_create(self, serializer):\n', 21, -1))
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/site-packages/celery/utils/dispatch/signal.py", line 276, in send
+    response = receiver(signal=self, sender=sender, **named)
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 100, in on_import_modules
+    self.worker_fixup.validate_models()
+  File "/usr/local/lib/python3.10/site-packages/celery/fixups/django.py", line 140, in validate_models
+    run_checks()
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/registry.py", line 88, in run_checks
+    new_errors = check(app_configs=app_configs, databases=databases)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 16, in check_url_config
+    return check_resolver(resolver)
+  File "/usr/local/lib/python3.10/site-packages/django/core/checks/urls.py", line 26, in check_resolver
+    return check_method()
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 531, in check
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 718, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.10/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.10/site-packages/django/urls/resolvers.py", line 711, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/core/urls.py", line 56, in <module>
+    path('api/', include('contact.urls')),
+  File "/usr/local/lib/python3.10/site-packages/django/urls/conf.py", line 39, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/local/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/app/contact/urls.py", line 2, in <module>
+    from .views import ConsultationRequestView
+  File "/app/contact/views.py", line 21
+    def perform_create(self, serializer):
+IndentationError: unexpected indent
+INFO 2025-12-14 12:51:57,600 command 1 132881913165632 Visit me at http://0.0.0.0:5555/flower/
+INFO 2025-12-14 12:51:57,607 command 1 132881913165632 Broker: redis://:**@redis:6379/2
+INFO 2025-12-14 12:51:57,614 command 1 132881913165632 Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'contact.tasks.send_consultation_email_task',
+ 'core.celery.debug_task',
+ 'core.celery.test_retry_task',
+ 'services.tasks.cleanup_incomplete_cases',
+ 'services.tasks.generate_case_report_async',
+ 'services.tasks.generate_daily_reports',
+ 'services.tasks.send_case_notification_async',
+ 'services.tasks.send_case_reminders',
+ 'services.tasks.verify_document_async',
+ 'users.tasks.cleanup_inactive_users',
+ 'users.tasks.generate_user_activity_report',
+ 'users.tasks.notify_user_profile_update',
+ 'users.tasks.send_email_verification',
+ 'users.tasks.send_password_reset_email',
+ 'users.tasks.sync_user_data_to_external_system']
+INFO 2025-12-14 12:51:57,626 mixins 1 132881822177024 Connected to redis://:**@redis:6379/2
+INFO 2025-12-14 19:35:06,626 command 1 127848608905024 Visit me at http://0.0.0.0:5555/flower/
+INFO 2025-12-14 19:35:06,642 command 1 127848608905024 Broker: redis://:**@redis:6379/2
+INFO 2025-12-14 19:35:06,651 command 1 127848608905024 Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'contact.tasks.send_consultation_email_task',
+ 'core.celery.debug_task',
+ 'core.celery.test_retry_task',
+ 'services.tasks.cleanup_incomplete_cases',
+ 'services.tasks.generate_case_report_async',
+ 'services.tasks.generate_daily_reports',
+ 'services.tasks.send_case_notification_async',
+ 'services.tasks.send_case_reminders',
+ 'services.tasks.verify_document_async',
+ 'users.tasks.cleanup_inactive_users',
+ 'users.tasks.generate_user_activity_report',
+ 'users.tasks.notify_user_profile_update',
+ 'users.tasks.send_email_verification',
+ 'users.tasks.send_password_reset_email',
+ 'users.tasks.sync_user_data_to_external_system']
+INFO 2025-12-14 19:35:06,668 mixins 1 127848517916416 Connected to redis://:**@redis:6379/2
+WARNING 2025-12-14 19:35:07,746 inspector 1 127848375359232 Inspect method conf failed
+WARNING 2025-12-14 19:35:07,752 inspector 1 127848508475136 Inspect method stats failed
+WARNING 2025-12-14 19:35:07,754 inspector 1 127848417322752 Inspect method registered failed
+WARNING 2025-12-14 19:35:07,763 inspector 1 127848392144640 Inspect method reserved failed
+WARNING 2025-12-14 19:35:07,764 inspector 1 127848383751936 Inspect method revoked failed
+WARNING 2025-12-14 19:35:07,766 inspector 1 127848400537344 Inspect method active failed
+WARNING 2025-12-14 19:35:07,768 inspector 1 127848408930048 Inspect method scheduled failed
+WARNING 2025-12-14 19:35:07,770 inspector 1 127848425715456 Inspect method active_queues failed
+INFO 2025-12-14 19:41:21,942 command 1 127848608905024 15 detected, shutting down
+INFO 2025-12-14 19:41:27,110 command 1 125309318190912 Visit me at http://0.0.0.0:5555/flower/
+INFO 2025-12-14 19:41:27,125 command 1 125309318190912 Broker: redis://:**@redis:6379/2
+INFO 2025-12-14 19:41:27,135 command 1 125309318190912 Registered tasks: 
+['celery.accumulate',
+ 'celery.backend_cleanup',
+ 'celery.chain',
+ 'celery.chord',
+ 'celery.chord_unlock',
+ 'celery.chunks',
+ 'celery.group',
+ 'celery.map',
+ 'celery.starmap',
+ 'contact.tasks.send_consultation_email_task',
+ 'core.celery.debug_task',
+ 'core.celery.test_retry_task',
+ 'services.tasks.cleanup_incomplete_cases',
+ 'services.tasks.generate_case_report_async',
+ 'services.tasks.generate_daily_reports',
+ 'services.tasks.send_case_notification_async',
+ 'services.tasks.send_case_reminders',
+ 'services.tasks.verify_document_async',
+ 'users.tasks.cleanup_inactive_users',
+ 'users.tasks.generate_user_activity_report',
+ 'users.tasks.notify_user_profile_update',
+ 'users.tasks.send_email_verification',
+ 'users.tasks.send_password_reset_email',
+ 'users.tasks.sync_user_data_to_external_system']
+INFO 2025-12-14 19:41:27,151 mixins 1 125309227202304 Connected to redis://:**@redis:6379/2
+WARNING 2025-12-14 19:41:28,230 inspector 1 125309185238784 Inspect method active failed
+WARNING 2025-12-14 19:41:28,236 inspector 1 125308690757376 Inspect method revoked failed
+WARNING 2025-12-14 19:41:28,240 inspector 1 125309176846080 Inspect method reserved failed
+WARNING 2025-12-14 19:41:28,240 inspector 1 125309193631488 Inspect method scheduled failed
+WARNING 2025-12-14 19:41:28,244 inspector 1 125308682364672 Inspect method conf failed
+WARNING 2025-12-14 19:41:28,245 inspector 1 125309202024192 Inspect method registered failed
+WARNING 2025-12-14 19:41:28,247 inspector 1 125309218809600 Inspect method stats failed
+WARNING 2025-12-14 19:41:28,248 inspector 1 125309210416896 Inspect method active_queues failed

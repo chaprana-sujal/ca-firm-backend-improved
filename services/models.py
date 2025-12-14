@@ -11,6 +11,7 @@ class ServiceCategory(models.Model):
     """
     name = models.CharField(max_length=255, unique=True)
     description = models.TextField(blank=True, null=True)
+    detail_description = models.TextField(blank=True, null=True, help_text="Long description for the category detail page")
     icon = models.CharField(max_length=10, default="📂", help_text="Emoji icon")
     
     class Meta:

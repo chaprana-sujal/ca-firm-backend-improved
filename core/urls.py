@@ -23,7 +23,6 @@ from rest_framework.response import Response
 from rest_framework.reverse import reverse
 from core import views as core_views
 
-# Defines the entry point (API_ROOT)
 @api_view(['GET'])
 def api_root(request, format=None):
     """
@@ -54,4 +53,5 @@ urlpatterns = [
     # Include all paths from the users app under the /api/ namespace
     path('api/', include('users.urls')), 
     path('api/', include('services.urls')),
+    path('api/contact/', include('contact.urls')),
 ]

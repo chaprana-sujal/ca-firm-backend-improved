@@ -29,7 +29,7 @@ class ServiceCategorySerializer(serializers.ModelSerializer):
     services = ServiceSerializer(many=True, read_only=True)
     class Meta:
         model = ServiceCategory
-        fields = ('id', 'name', 'description', 'services', 'icon')
+        fields = ('id', 'name', 'description', 'detail_description', 'services', 'icon')
 
 class PaymentSerializer(serializers.ModelSerializer):
     case_id = serializers.ReadOnlyField(source='case.id')

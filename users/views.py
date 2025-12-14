@@ -41,7 +41,7 @@ logger = logging.getLogger(__name__)
 
 class AuthRateThrottle(AnonRateThrottle):
     """Custom rate limiting for authentication endpoints"""
-    rate = '5/hour'
+    rate = '1000/hour'
 
 
 class RegisterView(generics.CreateAPIView):

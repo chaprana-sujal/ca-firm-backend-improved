@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     # Local apps
     'users',
     'services',
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -219,9 +220,9 @@ REST_FRAMEWORK = {
         'rest_framework.throttling.UserRateThrottle',
     ],
     'DEFAULT_THROTTLE_RATES': {
-        'anon': '100/hour',
-        'user': '1000/hour',
-        'auth': '100/hour',  # For login/register
+        'anon': '1000/hour',
+        'user': '10000/hour',
+        'auth': '1000/hour',  # For login/register
     },
     'DEFAULT_RENDERER_CLASSES': [
         'rest_framework.renderers.JSONRenderer',

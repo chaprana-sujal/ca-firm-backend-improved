@@ -41,6 +41,7 @@ app.conf.update(
     task_routes={
         'services.tasks.*': {'queue': 'services'},
         'users.tasks.*': {'queue': 'users'},
+        'contact.tasks.*': {'queue': 'default'},
         'core.tasks.*': {'queue': 'default'},
     },
     
